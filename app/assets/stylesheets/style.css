@@ -113,15 +113,16 @@ header {
   height: 100%;
 }
 #cd-hamburger-menu a, #cd-cart-trigger a {
-  width: 60px;
-  height: 100%;
+     width: 100px;
+    height: 56px;
+    margin: 23px 0 0;
 }
 
 #cd-hamburger-menu {
   left: 0;
 }
 #cd-hamburger-menu a {
-  background: #26292f url("../img/cd-hamburger-menu.svg") no-repeat center center;
+  background: #26292f url("/assets/cd-hamburger-menu.svg") no-repeat center center;
 }
 @media only screen and (min-width: 1200px) {
   #cd-hamburger-menu {
@@ -133,7 +134,7 @@ header {
   right: 0;
 }
 #cd-cart-trigger a {
-  background: #26292f url("../img/cd-cart.svg") no-repeat center center;
+  background: #26292f url("/assets/cd-cart.svg") no-repeat center center;
 }
 @media only screen and (min-width: 1200px) {
   #cd-cart-trigger {
@@ -148,7 +149,7 @@ header {
   }
 }
 
-#main-nav, #cd-cart {
+#cd-cart {
   position: fixed;
   top: 0;
   height: 100%;
@@ -203,7 +204,7 @@ header {
     right: 8em;
     padding-top: 0;
     top: 0;
-    background: transparent;
+    background: transparent;a
     box-shadow: none;
     /* header height */
     line-height: 80px;
