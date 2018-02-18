@@ -1,0 +1,74 @@
+	@media only screen and (min-width: 1200px) {
+
+	.header_nav ul {float: right;}
+.header_nav .social_media{ display:inline-block; vertical-align:middle; padding-left:37px; margin-left:0;}
+.header_nav .social_media li{padding:0 15px; margin: 0px 0;}
+.header_nav .social_media li a{  width:21px; height:21px; display:inline-block;  position:relative; z-index: 25;}
+.header_nav .wrapper { margin: 0 150px;}
+.fa {
+  padding: 3px;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0px 0px;
+  border-radius: 10%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+
+}
+@media only screen and (min-width: 768px) {
+ }
+
+.header_nav {
+	content: hide;
+}

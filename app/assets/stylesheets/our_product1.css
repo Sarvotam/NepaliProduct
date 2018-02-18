@@ -1,0 +1,68 @@
+/********************** OUR_PARTNERS *****************************/
+#our_partners{ background:#ffffff; padding:59px 0 95px;}
+#our_partners .heading_text{}
+#our_partners .heading_img{background-image:url(../../images/dot-03.png); background-repeat:no-repeat; background-position:left top; min-height:36px; margin:0 0 40px;}
+#our_partners .our_partners_wrap{}
+#our_partners .our_partners_wrap .partner_content{}
+#our_partners .our_partners_wrap .partner_icon{ width:240px; height:250px; border-radius:5%; background-repeat:no-repeat; background-position:center; display:inline-block; background-color:#bdbdbd;}
+#our_partners .our_partners_wrap .cisco{ background-image:url(../../images/partner_img-1.png);} 
+#our_partners .our_partners_wrap .hp{ background-image:url(../../images/partner_img-2.png);}
+#our_partners .our_partners_wrap .vmware{ background-image:url(../../images/partner_img-3.png);}
+#our_partners .our_partners_wrap .consultants_network{ background-image:url(../../images/partner_img-4.png);}
+
+#our_partners .carousel-control.left{ left:auto; right:1%; background-image:url(/assets/white_arrow.png);}
+#our_partners .carousel-control.right{ background-image:url(/assets/white_arrow.png); background-repeat:no-repeat; background-position:center;}
+#our_partners .carousel{padding-right:70px;}
+#our_partners .slick-initialized .slick-slide{display:block;}
+#our_partners{overflow:hidden;}
+#our_partners .slick-prev::before{ content:url(/assets/left-arrow.png); padding-left: 15px; }
+#our_partners .slick-next::before{content:url(/assets/right-arrow.png);}
+#our_partners .slick-next{right:0;}
+.slick-prev, .slick-next{width:31px; height:41px;}
+
+
+
+/********************** OUR_PARTNERS *****************************/
+/*#our_partners{ background:#333333; padding:60px 0 95px;}
+#our_partners .heading_text{}
+#our_partners .heading_text h2{margin:0; color:#f8f8fc; font-size:50px; line-height:43px; text-transform:uppercase; font-family: 'latoblack', arial;}
+#our_partners .heading_text h2 span{display:block;}
+#our_partners .heading_img{background-image:url(../../images/dot-03.png); background-repeat:no-repeat; background-position:left top; min-height:36px; margin:0 0 40px;}
+#our_partners .our_partners_wrap{}
+#our_partners .our_partners_wrap .partner_content{}
+#our_partners .our_partners_wrap .partner_icon{margin-left: 0px; width:250px; height:260px; border-radius:5%; background-repeat:no-repeat; background-position:center; display:inline-block; background-color:#f7f9fb;}
+#our_partners .our_partners_wrap .cisco{ background-image:url(../../images/partner_img-1.png);} 
+#our_partners .our_partners_wrap .hp{ background-image:url(../../images/partner_img-2.png);}
+#our_partners .our_partners_wrap .vmware{ background-image:url(../../images/partner_img-3.png);}
+#our_partners .our_partners_wrap .consultants_network{ background-image:url(../../images/partner_img-4.png);}
+
+#our_partners .carousel-control.left{ left:10%; background-image:url(/assets/white_arrow.png);}
+#our_partners .carousel-control.right{ background-image:url(/assets/white_arrow.png); background-repeat:no-repeat; background-position:center;}
+#our_partners .carousel-control{ width:31px; height:47px; opacity:1; top:37%;}
+#our_partners .carousel{padding-right:20px;}
+#our_partners .slick-initialized .slick-slide{display:block;}
+#our_partners{overflow:hidden;}
+#our_partners .slick-prev::before{ content:url(/assets/white_arrow.png); }
+#our_partners .slick-next::before{content:url(/assets/white_arrow.png); right: 100%;}
+#our_partners .slick-next{right:0;}
+.slick-prev, .slick-next{width:31px; height:41px;}*/
+
+@media (min-width: 768px) and (max-width: 1100px) {
+#our_partners .heading_text h2{font-size:40px;}
+#our_partners .our_partners_wrap .partner_icon{width:150px; height:150px;}
+#our_partners .our_partners_wrap .partner_icon{background-size:55%;}
+}
+
+@media (min-width: 768px) and (max-width: 960px){
+#our_partners{ background-size:contain; margin:0 0 18px; }
+#our_partners .our_partners_wrap .partner_icon { height: 110px; width: 110px;}
+}
+
+@media (max-width: 960px){
+#our_partners .heading_text h2{font-size:25px; line-height:24px;}
+}
+
+@media (max-width: 767px){
+#our_partners .heading_text h2{margin:0 0 30px;}
+#our_partners .carousel{padding-right:0;}
+}

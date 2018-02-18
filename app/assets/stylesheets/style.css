@@ -72,29 +72,31 @@ header {
   left: 0;
   height: 50px;
   width: 100%;
-  background: #31353d;
+  background: #808080;
   text-align: center;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
   z-index: 4;
 }
 @media only screen and (min-width: 1200px) {
   header {
-    height: 80px;
+    height: 69px;
+ background: #333;
   }
 }
 
 #logo {
   padding-top: 5px;
+  color: white;
   /* delete this property if you don't want your logo to scale down on mobile devices */
-  -webkit-transform: scale(0.8);
+/*  -webkit-transform: scale(0.8);
   -moz-transform: scale(0.8);
   -ms-transform: scale(0.8);
   -o-transform: scale(0.8);
-  transform: scale(0.8);
+  transform: scale(0.8);*/
 }
 @media only screen and (min-width: 1200px) {
   #logo {
-    padding-top: 20px;
+    padding-top: 35px;
     position: absolute;
     /* logo left margin on Dekstop */
     left: 2.4em;
@@ -113,9 +115,13 @@ header {
   height: 100%;
 }
 #cd-hamburger-menu a, #cd-cart-trigger a {
-     width: 100px;
-    height: 56px;
-    margin: 23px 0 0;
+/*     width: 60px;
+  height: 100%;*/
+  /*  margin: 23px 0 0;*/
+  width: 36px;
+height: 48%;
+margin: 24px 0 0;
+ background: #333;
 }
 
 #cd-hamburger-menu {
@@ -123,6 +129,7 @@ header {
 }
 #cd-hamburger-menu a {
   background: #26292f url("/assets/cd-hamburger-menu.svg") no-repeat center center;
+  z-index: 46;
 }
 @media only screen and (min-width: 1200px) {
   #cd-hamburger-menu {
@@ -134,7 +141,7 @@ header {
   right: 0;
 }
 #cd-cart-trigger a {
-  background: #26292f url("/assets/cd-cart.svg") no-repeat center center;
+  background: #333 url("/assets/cd-cart.svg") no-repeat center center;
 }
 @media only screen and (min-width: 1200px) {
   #cd-cart-trigger {
@@ -144,12 +151,13 @@ header {
   #cd-cart-trigger a {
     position: relative;
     width: 100px;
+    height: 45px;
     border-left: none;
-    background-color: #26292f;
+    background-color: #333;
   }
 }
 
-#cd-cart {
+#main-nav, #cd-cart {
   position: fixed;
   top: 0;
   height: 100%;
@@ -158,8 +166,8 @@ header {
   padding-top: 50px;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  z-index: 3;
+/*  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+*/  z-index: 3;
 }
 @media only screen and (min-width: 768px) {
   #main-nav, #cd-cart {
@@ -170,6 +178,7 @@ header {
   #main-nav, #cd-cart {
     width: 30%;
     /* header height has changed */
+     background: #333;
     padding-top: 80px;
   }
 }
@@ -201,8 +210,8 @@ header {
     height: auto;
     width: auto;
     left: auto;
-    right: 8em;
-    padding-top: 0;
+    right: 12em;
+    padding-top: 6px;
     top: 0;
     background: transparent;a
     box-shadow: none;
@@ -212,8 +221,8 @@ header {
   }
   #main-nav li {
     display: inline-block;
-    margin-left: 1em;
-  }
+/*    margin-left: 1em;
+*/  }
   #main-nav ul a {
     display: inline-block;
     height: auto;
@@ -410,6 +419,63 @@ main {
   -moz-animation: cd-fade-in 0.3s;
   animation: cd-fade-in 0.3s;
 }
+#myInput {
+/*  background-image: url('/css/searchicon.png');*/
+    background-position: 10px 10px;
+background-repeat: no-repeat;
+font-size: 13px;
+padding: 5px 20px 5px 12px;
+border: 1px solid #ddd;
+margin: -25px 0 0 12%;
+float: left;
+height: 27px;
+width: 76%;
+border-radius: 1px;
+  z-index: 5;
+    position: relative;
+}
+
+/*@media screen and (max-width: 480px) {
+  #myInput {
+    margin: 5px 0 0 5%;
+  }
+}
+  @media screen and (max-width: 568px) {
+  #myInput {
+    margin: 5px 0 0 5%;
+  }
+}*/
+@media only screen and (min-width: 1200px) {
+  #myInput{ margin: 5px 0 0 190px; width: 40%   background-position: 10px 10px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin: 5px 0 0 150px;
+  float: left;
+      height: 37px;
+    width: 50%;
+    border-radius: 4px;
+    z-index: 5;
+    position: relative;} 
+  }
+
+/*  @media only screen and (min-width: 768px) {
+  #myInput{ margin: 5px 0 0 190px; width: 40%   background-position: 10px 10px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin: 5px 0 0 150px;
+  float: left;
+      height: 37px;
+    width: 50%;
+    border-radius: 4px;
+    z-index: 5;
+    position: relative;} 
+
+}*/
+
 
 /* -------------------------------- 
 
@@ -443,3 +509,4 @@ xkeyframes
     opacity: 1;
   }
 }
+
