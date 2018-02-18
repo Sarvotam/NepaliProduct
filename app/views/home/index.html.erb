@@ -19,17 +19,15 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <header>
 <div class="header_nav">
+<a href="#" class="about-company" style="width: 240px; float: left; left: 12; right: 0; color: white;"><b >Explor your Product</b></a>
 	<div class="wrapper">
 		<div class=" text-center">
-		<!-- 	<ul>
-				<li><a href="#" class="account" style="color: white; float: right;">My Account</a></li>
-			</ul> -->
-			 <ul class="row social_media list-inline">
-			<li> <a href="#" class="fa fa-facebook"></a></li>
+			 <ul class="row social_media ">
+ 			<li> <a href="#" class="fa fa-facebook"></a></li>
 			<li><a href="#" class="fa fa-twitter"></a></li>
 			<li><a href="#" class="fa fa-linkedin"></a></li>
 			<li><a href="#" class="fa fa-pinterest"></a></li>
-         <li><a href="#" class="account">MyAccount</a></li>
+         	<li> <a href="#" class="account" style="width: 130px;border-left: 1px solid white; border-right: 1px solid white;"><i class="glyphicon glyphicon-user" style="color: white; font-size: 13px; margin-right: 4px; "><b style="font-family: sans-serif; margin-left: 6px;">My Account</b></i></a></li>
            <!--   
              <li><a href="#" class="twitter">Twitter</a></li>
              <li><a href="#" class="linkedin">Linkedin</a></li>
@@ -41,19 +39,31 @@
 	</div>
 </div>
 <style type="text/css">
-@media screen and (max-width: 480px) 
-{
-	.header_nav {
-	display : none;
-			}
+	@media (max-width: 640px) {
+.header_nav ul .fa{
+	display: none;
+}
+.about-company {
+	display: none;
+}
+.header_nav ul li { float: right; margin: 0 50px; }
 }	
 	.header_nav{
 		background-color: #000000;
 height: 22px;
 color: #ffffff
 	}
+	.header_nav ul li {
+		display: inline;
+	}
 
-
+.floating-box {
+    display: inline-block;
+    width: 180px;
+    height: 7px;
+    margin: 1px;
+  
+}
 </style>
 
 		<div id="logo"><!-- <img src="assets/cd-logo.svg" alt="Homepage"> --> 
