@@ -69,6 +69,10 @@
 @media only screen and (min-width: 768px) {
  }
 
+@media (max-width: 640px) {
 .header_nav {
-	content: hide;
+	display: : none;
+}
+
+.header_nav .social_media li{ display: : none; }
 }
