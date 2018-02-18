@@ -1,23 +1,23 @@
 /********************** OUR_PARTNERS *****************************/
 #our_partners{ background:#ffffff; padding:59px 0 95px;}
 #our_partners .heading_text{}
-#our_partners .heading_img{background-image:url(../../images/dot-03.png); background-repeat:no-repeat; background-position:left top; min-height:36px; margin:0 0 40px;}
-#our_partners .our_partners_wrap{}
+/*#our_partners .heading_img{background-image:url(../../images/dot-03.png); background-repeat:no-repeat; background-position:left top; min-height:36px; margin:0 0 120px;}
+*/#our_partners .our_partners_wrap{}
 #our_partners .our_partners_wrap .partner_content{}
-#our_partners .our_partners_wrap .partner_icon{ width:240px; height:250px; border-radius:5%; background-repeat:no-repeat; background-position:center; display:inline-block; background-color:#bdbdbd;}
-#our_partners .our_partners_wrap .cisco{ background-image:url(../../images/partner_img-1.png);} 
-#our_partners .our_partners_wrap .hp{ background-image:url(../../images/partner_img-2.png);}
-#our_partners .our_partners_wrap .vmware{ background-image:url(../../images/partner_img-3.png);}
-#our_partners .our_partners_wrap .consultants_network{ background-image:url(../../images/partner_img-4.png);}
+#our_partners .our_partners_wrap .partner_icon{ width:250px; height:300px; margin-right: 20px; border-radius:5%; background-repeat:no-repeat; background-position:center; display:inline-block; background-color:#bdbdbd;}
+#our_partners .our_partners_wrap .cisco{ background-image:url(/assets/scupture1.jpg);} 
+#our_partners .our_partners_wrap .hp{ background-image:url(/assets/scupture2.jpg);}
+#our_partners .our_partners_wrap .vmware{ background-image:url(/assets/mala1.jpg);}
+#our_partners .our_partners_wrap .consultants_network{ background-image:url(/assets/window4.jpg);}
 
 #our_partners .carousel-control.left{ left:auto; right:1%; background-image:url(/assets/white_arrow.png);}
 #our_partners .carousel-control.right{ background-image:url(/assets/white_arrow.png); background-repeat:no-repeat; background-position:center;}
 #our_partners .carousel{padding-right:70px;}
 #our_partners .slick-initialized .slick-slide{display:block;}
 #our_partners{overflow:hidden;}
-#our_partners .slick-prev::before{ content:url(/assets/left-arrow.png); padding-left: 15px; }
+#our_partners .slick-prev::before{ content:url(/assets/left-arrow.png); }
 #our_partners .slick-next::before{content:url(/assets/right-arrow.png);}
-#our_partners .slick-next{right:0;}
+#our_partners .slick-next{right:-26;}
 .slick-prev, .slick-next{width:31px; height:41px;}
 
 
