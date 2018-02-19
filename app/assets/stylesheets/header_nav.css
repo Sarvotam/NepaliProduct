@@ -3,7 +3,7 @@
 	.header_nav ul {float: right;}
 .header_nav .social_media{ display:inline-block; vertical-align:middle; padding-left:3px; margin-left:0;}
 .header_nav .social_media li{padding:0 10px; margin: 0px 0;}
-.header_nav .social_media li a{  width:21px; height:21px; display:inline-block;  position:relative; z-index: 25;}
+.header_nav .social_media li a{  width:21px; height:22px; display:inline-block;  position:relative; z-index: 25;}
 .header_nav .wrapper { margin: 0 60px;}
 .fa {
   padding: 3px;
@@ -20,50 +20,34 @@
 
 .fa-facebook {
   background: none;
-  color: white;
+  color: blue;
 }
 
 .fa-twitter {
   background: none;
-  color: white;
+  color: green;
 }
 
 .fa-google {
   background: none;
-  color: white;
+  color: purple;
 }
 
 .fa-linkedin {
   background: none;
-  color: white;
+  color: pink;
 }
 
-.fa-youtube {
-  background: none;
-  color: white;
-}
 
 .fa-instagram {
   background: none;
-  color: white;
+  color: #ffffff;
 }
 
 .fa-pinterest {
   background: none;
-  color: white;
+  color: #ffffff;
 }
-
-.fa-snapchat-ghost {
-  background: none;
-  color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-
-.fa-skype {
-  background: none;
-  color: white;
-}
-
 
 }
 @media only screen and (min-width: 768px) {
