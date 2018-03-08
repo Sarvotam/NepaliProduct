@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  resources :carts
+  resources :payment_details
+  resources :orders
+  resources :stocks
+  resources :products
+  resources :product_types
   devise_for :users
   root to: 'home#index'
 

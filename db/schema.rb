@@ -10,7 +10,78 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180308090528) do
+ActiveRecord::Schema.define(version: 20180308100607) do
+
+  create_table "carts", force: :cascade do |t|
+    t.integer "quantity"
+    t.integer "user_id"
+    t.integer "product_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["product_id"], name: "index_carts_on_product_id"
+    t.index ["user_id"], name: "index_carts_on_user_id"
+  end
+
+  create_table "orders", force: :cascade do |t|
+    t.text "shipping_address"
+    t.text "billing_address"
+    t.float "product_price"
+    t.float "delivery_cost"
+    t.float "discount"
+    t.float "final_price"
+    t.integer "quantity"
+    t.text "order_description"
+    t.integer "product_id"
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["product_id"], name: "index_orders_on_product_id"
+    t.index ["user_id"], name: "index_orders_on_user_id"
+  end
+
+  create_table "payment_details", force: :cascade do |t|
+    t.float "received_amount"
+    t.float "due_amount"
+    t.integer "order_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["order_id"], name: "index_payment_details_on_order_id"
+  end
+
+  create_table "product_images", force: :cascade do |t|
+    t.string "product_iamge"
+    t.integer "product_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["product_id"], name: "index_product_images_on_product_id"
+  end
+
+  create_table "product_types", force: :cascade do |t|
+    t.string "product_type"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "products", force: :cascade do |t|
+    t.string "product_name"
+    t.text "product_description"
+    t.float "price"
+    t.boolean "status"
+    t.float "height"
+    t.float "width"
+    t.integer "product_type_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["product_type_id"], name: "index_products_on_product_type_id"
+  end
+
+  create_table "stocks", force: :cascade do |t|
+    t.integer "in_stock"
+    t.integer "product_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["product_id"], name: "index_stocks_on_product_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
